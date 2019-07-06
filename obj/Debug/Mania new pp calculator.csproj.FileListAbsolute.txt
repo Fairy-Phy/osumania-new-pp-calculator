@@ -28,3 +28,7 @@ F:\Developfiles\Mania_new_pp_calculator\bin\Test\ja\osu!mania new pp calculator.
 F:\Developfiles\Mania_new_pp_calculator\obj\Debug\ja\osu!mania new pp calculator.resources.dll
 F:\Developfiles\Mania_new_pp_calculator\obj\Debug\osu!mania new pp calculator.exe
 F:\Developfiles\Mania_new_pp_calculator\obj\Debug\osu!mania new pp calculator.pdb
+F:\Developfiles\Mania_new_pp_calculator\bin\Release\osu!mania new pp calculator.exe.config
+F:\Developfiles\Mania_new_pp_calculator\bin\Release\osu!mania new pp calculator.exe
+F:\Developfiles\Mania_new_pp_calculator\bin\Release\osu!mania new pp calculator.pdb
+F:\Developfiles\Mania_new_pp_calculator\bin\Release\ja\osu!mania new pp calculator.resources.dll

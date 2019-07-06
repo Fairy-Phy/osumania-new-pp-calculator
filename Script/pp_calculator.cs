@@ -10,10 +10,9 @@ namespace Mania_new_pp_calculator.Script
 	class pp_calculator
 	{
 		public static string PP_calculator(decimal star_dif_d, decimal map_od_d, decimal score_d, decimal map_objects_d, bool easy, bool nofail, bool halftime) {
-			
-			int map_objects = (int)map_objects_d;
 
-			double map_od = (double)map_od_d,
+			double map_objects = (double)map_objects_d,
+				   map_od = (double)map_od_d,
 				   score = (double)score_d,
 				   star_dif = (double)star_dif_d;
 
