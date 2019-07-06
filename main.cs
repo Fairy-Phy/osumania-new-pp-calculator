@@ -4,7 +4,6 @@
 using System;
 using System.Windows.Forms;
 
-
 namespace Mania_new_pp_calculator
 {
 	static class main

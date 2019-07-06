@@ -17,7 +17,6 @@ namespace Mania_new_pp_calculator.Script
 				   score = (double)score_d,
 				   star_dif = (double)star_dif_d;
 
-
 			var mods = new Dictionary<string, bool>(){
 				{"easy" , easy},
 				{"nofail" , nofail},
@@ -39,23 +38,22 @@ namespace Mania_new_pp_calculator.Script
 			}
 			if (mods["halftime"] == true) decline_score *= 0.5;
 
-
 			map_od /= decline_od;
 
 			score /= decline_score;
 
 			// Main algorithm
-			double star_difvalue = Math.Pow(5 * Math.Max(1, star_dif / 0.2) - 4, 2.2) / 135;
-			star_difvalue *= 1 + 0.1 * Math.Min(1, map_objects / 1500);
+			double star_difvalue = Math.Pow( ( 5 * Math.Max(1, star_dif / 0.2) ) - 4, 2.2) / 135;
+				   star_difvalue *= 1 + ( 0.1 * Math.Min(1, map_objects / 1500) );
 
 			double strainmultiplier, accuracyvalue;
 
-			if (score < 500000) strainmultiplier = score / 500000 * 0.1;
-			else if (score < 600000) strainmultiplier = (score - 500000) / 100000 * 0.3;
-			else if (score < 700000) strainmultiplier = (score - 600000) / 100000 * 0.25 + 0.3;
-			else if (score < 800000) strainmultiplier = (score - 700000) / 100000 * 0.2 + 0.55;
-			else if (score < 900000) strainmultiplier = (score - 800000) / 100000 * 0.15 + 0.75;
-			else strainmultiplier = (score - 900000) / 100000 * 0.1 + 0.9;
+			if (score < 500000) strainmultiplier = ( score / 500000 ) * 0.1;
+			else if (score < 600000) strainmultiplier = ( (score - 500000) / 100000 ) * 0.3;
+			else if (score < 700000) strainmultiplier = ( ( (score - 600000) / 100000 ) * 0.25 ) + 0.3;
+			else if (score < 800000) strainmultiplier = ( ( (score - 700000) / 100000 ) * 0.2 ) + 0.55;
+			else if (score < 900000) strainmultiplier = ( ( (score - 800000) / 100000 ) * 0.15 ) + 0.75;
+			else strainmultiplier = ( ( (score - 900000) / 100000 ) * 0.1 ) + 0.9;
 
 			if (score >= 960000) {
 				accuracyvalue = map_od * decline_od * 0.02 * star_difvalue * Math.Pow((score - 960000) / 40000, 1.1);
