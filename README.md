@@ -1,4 +1,6 @@
 # osu!mania new pp calculator
+[![CodeFactor](https://www.codefactor.io/repository/github/fairy-phy/osumania-new-pp-calculator/badge/master)](https://www.codefactor.io/repository/github/fairy-phy/osumania-new-pp-calculator/overview/master)
+
 osu!mania new pp calculator for windows.
 It is made based on http://maniapp.uy.to/
 
